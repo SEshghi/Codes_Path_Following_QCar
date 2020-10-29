@@ -1,0 +1,36 @@
+xi_1=
+x1^2 + x2^2 - 1
+xi_2=
+2*x1*cos(x3)*(v + x5) + 2*x2*sin(x3)*(v + x5)
+Lf2S=
+2*cos(x3)^2*(v + x5)^2 + 2*sin(x3)^2*(v + x5)^2 + x6*(2*x1*cos(x3) + 2*x2*sin(x3)) + (tan(x4)*(v + x5)*(2*x2*cos(x3)*(v + x5) - 2*x1*sin(x3)*(v + x5)))/L
+xi_3=
+2*cos(x3)^2*(v + x5)^2 + 2*sin(x3)^2*(v + x5)^2 + x6*(2*x1*cos(x3) + 2*x2*sin(x3)) + (tan(x4)*(2*v + 2*x5)*(v + x5)*(x2*cos(x3) - x1*sin(x3)))/L
+Lf3S = 
+x6*(2*cos(x3)^2*(2*v + 2*x5) + 2*sin(x3)^2*(2*v + 2*x5) + (2*tan(x4)*(v + x5)*(x2*cos(x3) - x1*sin(x3)))/L + (tan(x4)*(2*v + 2*x5)*(x2*cos(x3) - x1*sin(x3)))/L) + cos(x3)*(v + x5)*(2*x6*cos(x3) - (sin(x3)*tan(x4)*(2*v + 2*x5)*(v + x5))/L) + sin(x3)*(v + x5)*(2*x6*sin(x3) + (cos(x3)*tan(x4)*(2*v + 2*x5)*(v + x5))/L) + (tan(x4)*(x6*(2*x2*cos(x3) - 2*x1*sin(x3)) - (tan(x4)*(2*v + 2*x5)*(v + x5)*(x1*cos(x3) + x2*sin(x3)))/L)*(v + x5))/L
+Lg1Lf2S = 
+2*x1*cos(x3) + 2*x2*sin(x3)
+Lg2Lf2S = 
+((2*v + 2*x5)*(v + x5)*(tan(x4)^2 + 1)*(x2*cos(x3) - x1*sin(x3)))/L
+eta_1 = 
+atan(x2/x1)
+eta_2=
+-((v + x5)*(x2*cos(x3) - x1*sin(x3)))/(x1^2 + x2^2)
+eta_3 = 
+(cos(x3)*(v + x5)^2*(x2^2*sin(x3) - x1^2*sin(x3) + 2*x1*x2*cos(x3)))/(x1^2 + x2^2)^2 - (x6*(x2*cos(x3) - x1*sin(x3)))/(x1^2 + x2^2) - (sin(x3)*(v + x5)^2*(x1^2*cos(x3) - x2^2*cos(x3) + 2*x1*x2*sin(x3)))/(x1^2 + x2^2)^2 + (tan(x4)*(v + x5)^2*(x1*cos(x3) + x2*sin(x3)))/(L*(x1^2 + x2^2))
+Lf3P = 
+x6*((cos(x3)*(2*v + 2*x5)*(x2^2*sin(x3) - x1^2*sin(x3) + 2*x1*x2*cos(x3)))/(x1^2 + x2^2)^2 - (sin(x3)*(2*v + 2*x5)*(x1^2*cos(x3) - x2^2*cos(x3) + 2*x1*x2*sin(x3)))/(x1^2 + x2^2)^2 + (tan(x4)*(2*v + 2*x5)*(x1*cos(x3) + x2*sin(x3)))/(L*(x1^2 + x2^2))) + cos(x3)*(v + x5)*((x6*sin(x3))/(x1^2 + x2^2) + (cos(x3)*(v + x5)^2*(2*x2*cos(x3) - 2*x1*sin(x3)))/(x1^2 + x2^2)^2 - (sin(x3)*(v + x5)^2*(2*x1*cos(x3) + 2*x2*sin(x3)))/(x1^2 + x2^2)^2 + (2*x1*x6*(x2*cos(x3) - x1*sin(x3)))/(x1^2 + x2^2)^2 - (4*x1*cos(x3)*(v + x5)^2*(x2^2*sin(x3) - x1^2*sin(x3) + 2*x1*x2*cos(x3)))/(x1^2 + x2^2)^3 + (4*x1*sin(x3)*(v + x5)^2*(x1^2*cos(x3) - x2^2*cos(x3) + 2*x1*x2*sin(x3)))/(x1^2 + x2^2)^3 + (cos(x3)*tan(x4)*(v + x5)^2)/(L*(x1^2 + x2^2)) - (2*x1*tan(x4)*(v + x5)^2*(x1*cos(x3) + x2*sin(x3)))/(L*(x1^2 + x2^2)^2)) + sin(x3)*(v + x5)*((cos(x3)*(v + x5)^2*(2*x1*cos(x3) + 2*x2*sin(x3)))/(x1^2 + x2^2)^2 - (x6*cos(x3))/(x1^2 + x2^2) + (sin(x3)*(v + x5)^2*(2*x2*cos(x3) - 2*x1*sin(x3)))/(x1^2 + x2^2)^2 + (2*x2*x6*(x2*cos(x3) - x1*sin(x3)))/(x1^2 + x2^2)^2 - (4*x2*cos(x3)*(v + x5)^2*(x2^2*sin(x3) - x1^2*sin(x3) + 2*x1*x2*cos(x3)))/(x1^2 + x2^2)^3 + (4*x2*sin(x3)*(v + x5)^2*(x1^2*cos(x3) - x2^2*cos(x3) + 2*x1*x2*sin(x3)))/(x1^2 + x2^2)^3 + (sin(x3)*tan(x4)*(v + x5)^2)/(L*(x1^2 + x2^2)) - (2*x2*tan(x4)*(v + x5)^2*(x1*cos(x3) + x2*sin(x3)))/(L*(x1^2 + x2^2)^2)) + (tan(x4)*(v + x5)*((x6*(x1*cos(x3) + x2*sin(x3)))/(x1^2 + x2^2) - (2*cos(x3)*(v + x5)^2*(x1^2*cos(x3) - x2^2*cos(x3) + 2*x1*x2*sin(x3)))/(x1^2 + x2^2)^2 - (2*sin(x3)*(v + x5)^2*(x2^2*sin(x3) - x1^2*sin(x3) + 2*x1*x2*cos(x3)))/(x1^2 + x2^2)^2 + (tan(x4)*(v + x5)^2*(x2*cos(x3) - x1*sin(x3)))/(L*(x1^2 + x2^2))))/L
+Lg1Lf2P = 
+-(x2*cos(x3) - x1*sin(x3))/(x1^2 + x2^2)
+Lg2Lf2P = 
+((v + x5)^2*(x1*cos(x3) + x2*sin(x3)))/(L*cos(x4)^2*(x1^2 + x2^2))
+d21 = 
+-(x2*cos(x3) - x1*sin(x3))/(x1^2 + x2^2)
+d22 = 
+((v + x5)^2*(x1*cos(x3) + x2*sin(x3)))/(L*cos(x4)^2*(x1^2 + x2^2))
+d11 = 
+2*x1*cos(x3) + 2*x2*sin(x3)
+d12 = 
+((2*v + 2*x5)*(v + x5)*(tan(x4)^2 + 1)*(x2*cos(x3) - x1*sin(x3)))/L
+M = 
+matrix([[x1*sin(x3) - x2*cos(x3), (x1*cos(x3) + x2*sin(x3))/(2*(x1^2 + x2^2))], [(L*cos(x4)^2*(x1*cos(x3) + x2*sin(x3)))/(v + x5)^2, (L*cos(x4)^2*(x2*cos(x3) - x1*sin(x3)))/(2*(x1^2 + x2^2)*(v + x5)^2)]])
